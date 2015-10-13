@@ -1,0 +1,147 @@
+<!DOCTYPE html PUBLIC "XHTML 1.0 Transitional" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xml:lang="en" dir="ltr"><head>
+<meta http-equiv="Content-type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;">
+<link rel="shortcut icon" href="http://185.27.134.9/favicon.ico">
+<link rel="apple-touch-icon" href="http://185.27.134.9/favicon.png">
+<title>File Manager</title>
+
+<script type="text/javascript"><!--
+function TabText() {
+	if (event != null) {
+		if (event.srcElement) {
+			if (event.srcElement.value) {
+				if (event.keyCode == 9) {
+					if (document.selection != null) {
+						document.selection.createRange().text = '\t';
+						event.returnValue = false;
+					}
+					else {
+						event.srcElement.value += '\t';
+						return false;
+					}
+				}
+			}
+		}
+	}
+}
+//--></script>
+<script type="text/javascript" src="File%20Manager_files/edit.js"></script>
+
+			<!-- /skins/skins.inc.php -->
+			<script type="text/javascript" src="File%20Manager_files/custom.js"></script>
+			<script type="text/javascript" src="File%20Manager_files/hoverIntent.js"></script>
+			<script type="text/javascript" src="File%20Manager_files/superfish.js"></script>
+			<script type="text/javascript" src="File%20Manager_files/supersubs.js"></script>
+			<script type="text/javascript" src="File%20Manager_files/jquery_003.js"></script>
+		<link rel="stylesheet" type="text/css" href="File%20Manager_files/main.htm">
+
+			<!-- /skins/skins.inc.php -->
+			<link rel="stylesheet" href="File%20Manager_files/style_002.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="File%20Manager_files/style.css" type="text/css" media="screen">
+			<link rel="stylesheet" href="File%20Manager_files/tip-twitter.css" type="text/css">
+			<link rel="stylesheet" href="File%20Manager_files/tip-yellowsimple.css" type="text/css">
+		<link rel="stylesheet" href="File%20Manager_files/bootstrap.css"><link rel="stylesheet" href="File%20Manager_files/bootstrapValidator.css"><script type="text/javascript" src="File%20Manager_files/jquery-1.js"></script><script type="text/javascript" src="File%20Manager_files/bootstrap.js"></script><script type="text/javascript" src="File%20Manager_files/bootstrapValidator.js"></script><script type="text/javascript" src="File%20Manager_files/jquery.js"></script><script type="text/javascript" src="File%20Manager_files/jquery_002.js"></script></head>
+
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+<body onload="">
+
+<!-- Template /skins/shinra/edit.template.php begin -->
+<form id="EditForm" action="/index.php" method="post">
+<input name="ftpserver" value="185.27.134.11" type="hidden">
+<input name="ftpserverport" value="21" type="hidden">
+<input name="username" value="pacus_7879064" type="hidden">
+<input name="language" value="en" type="hidden">
+<input name="skin" value="shinra" type="hidden">
+<input name="ftpmode" value="binary" type="hidden">
+<input name="passivemode" value="yes" type="hidden">
+<input name="protocol" value="FTP" type="hidden">
+<input name="viewmode" value="list" type="hidden">
+<input name="sort" value="" type="hidden">
+<input name="sortorder" value="" type="hidden">
+<input name="state" value="edit" type="hidden">
+<input name="state2" value="" type="hidden">
+<input name="directory" value="/twitteryarkee.260mb.com/htdocs" type="hidden">
+<input name="screen" value="2" type="hidden">
+<input name="textareaType" value="" type="hidden">
+<table style="padding: 2px; width: 99%; height: 100%; border: 0px;">
+	<tbody><tr>
+		<td style="vertical-align: top; text-align: left; width: 25%;">
+<a href="javascript:document.forms['EditForm'].state.value='browse';%20document.forms['EditForm'].state2.value='main';%20document.forms['EditForm'].submit();" title="Back (accesskey b)" accesskey="b"><img src="File%20Manager_files/back.png" alt="Back (accesskey b)" onmouseover="this.style.margin='0px';this.style.width='34px';this.style.height='34px';" onmouseout="this.style.margin='1px';this.style.width='32px';this.style.height='32px';" style="border: 0px; margin: 1px; width: 32px; height: 32px; vertical-align: middle;"></a>
+ &nbsp; 
+<a href="javascript:document.forms['EditForm'].screen.value=3;%20%20document.forms['EditForm'].submit();" title="Save (accesskey s)" accesskey="s"><img src="File%20Manager_files/filesave.png" alt="Save (accesskey s)" onmouseover="this.style.margin='0px';this.style.width='34px';this.style.height='34px';" onmouseout="this.style.margin='1px';this.style.width='32px';this.style.height='32px';" style="border: 0px; margin: 1px; width: 32px; height: 32px; vertical-align: middle;"></a>
+ &nbsp; 
+<select name="textareaSelect" id="textareaSelect" onchange="document.forms['EditForm'].screen.value=2;document.forms['EditForm'].textareaType.value=document.forms['EditForm'].textareaSelect.options[document.forms['EditForm'].textareaSelect.selectedIndex].value;document.forms['EditForm'].submit();">
+<option value="plain" selected="selected">Normal textarea</option>
+<option value="ace">Ace (code editor)</option>
+</select>
+		</td>
+		<td style="vertical-align: top; text-align: left; width: 50%;">
+				<input name="entry" value="instphp.php" type="hidden">
+				File: /twitteryarkee.260mb.com/htdocs/instphp.php<br>
+ &nbsp;
+		</td>
+		<td style="vertical-align: top; text-align: left; width: 25%;">
+			<span style="font-size: 90%;">Status: This file has not yet been saved</span>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="3" style="vertical-align: top; text-align: left;">
+			<div style="margin-left: 0px; text-align: left;">
+				<textarea name="text" class="edit" rows="33" style="width: 99%;" onkeydown="TabText()" wrap="off">&lt;?php
+function sendTweet($mensaje){
+        ini_set('display_errors', 1);
+        require_once('API/TwitterAPIExchange.php');;
+        /** Set access tokens here - see: https://dev.twitter.com/apps/ **/ 
+        $settings = array(
+            'oaut_access_token' =&gt; "383468815-7ywEzWHmN8okIcZZHbKVMAJ8OfE8myRBCgNsiElP",
+			'oaut_access_token_secret' =&gt; "zsGep2IWEzfVvLy9i0fJm8WRqJbRaQOnHqKK0Z3ROlUjG",
+			'consumer_key' =&gt; "ntzRkjwygYywWTcIgJwTOIbBe",
+			'consumer_secret' =&gt; "0BfRx1sGPAr6bmoRojJNbzg61IvqKhKoHZZ1xw7P7ukKqc7ULD"
+			);
+       
+        $url = 'https://api.twitter.com/1.1/statuses/update.json';
+        $requestMethod = 'POST';
+        /** POST fields required by the URL above. See relevant docs as above **/
+        $postfields = array( 'status' =&gt; $mensaje, );
+        /** Perform a POST request and echo the response **/
+        $twitter = new TwitterAPIExchange($settings);
+        return $twitter-&gt;buildOauth($url, $requestMethod)-&gt;setPostfields($postfields)-&gt;performRequest();
+}
+
+$mensaje="tweet de prueba en mi aplicacion";
+#$_POST['tweettexto'];
+$respuesta = sendTweet($mensaje);
+$json = json_decode($respuesta);
+
+echo '&lt;meta charset="utf-8"&gt;';
+echo "Tweet Enviado por: ".$json-&gt;user-&gt;name." (@".$json-&gt;user-&gt;screen_name.")";
+echo "&lt;br&gt;";
+echo "Tweet: ".$json-&gt;text;
+echo "&lt;br&gt;";
+echo "Tweet ID: ".$json-&gt;id_str;
+echo "&lt;br&gt;";
+echo "Fecha Envio: ".$json-&gt;created_at;
+?&gt;</textarea>
+			</div>
+		</td>
+	</tr>
+</tbody></table>
+</form>
+
+<!-- Template /skins/shinra/edit.template.php end -->
+
+
+
+
+</body></html>
